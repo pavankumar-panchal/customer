@@ -75,7 +75,7 @@ function runicicidbquery($query)
 	 set_time_limit(3600);
 
 	 //Run the query
-	 $result = mysqli_query($newconnection,$query) or die(mysqli_error());
+	$result = mysqli_query($newconnection, $query) or die(mysqli_error($newconnection));
 
 	 //Return the result
 	 return $result;
@@ -1812,6 +1812,10 @@ function remove_duplicates($str)
   }
   return trim($str,',');
 }
+
+
+
+
 
 function getstartnumber($region)
 {
