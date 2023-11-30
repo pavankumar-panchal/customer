@@ -1,0 +1,21 @@
+ 
+Date: ##DATE##		
+																	
+To,
+##COMPANYNAME##
+												Sub: ##SUBJECT## 
+ 
+
+ 
+Dear Customer,
+  
+This is with respect to progess of Implementation carried out by ##IMPLEMENTERNAME## . 
+ 
+Customer Remarks: ##CUSTREMARKS##
+
+ 
+Regards,
+
+Relyon Softech Ltd, Bangalore
+
+								This email is a system generated message(##EMAILID##). Please do not reply to this message(CM).

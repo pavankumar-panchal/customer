@@ -1,0 +1,29 @@
+Training Registration
+===============================
+Participants:
+-------------------------------
+ 
+##TEXTMESSAGE##
+ 
+===============================
+ 
+ 
+ 
+ 
+Contact Details :
+-------------------------------
+ 
+Business name: ##COMPANY## 
+Contact Person: ##NAME## 
+Address: ##ADDRESS## 
+Place: ##PLACE## 
+State: ##STATE## 
+District: ##DISTRICT## 
+Phone: ##PHONE## 
+Cell: ##CELL## 
+Email: ##EMAIL## 
+Product: ##PRODUCT##
+  
+  
+===============================
+			This is an email generated through Relyon Customer Login Area, against the request processed by the customer(CM).

@@ -1,0 +1,23 @@
+ 
+																			Sub: Customer ID Retrival | Relyon Customer Login Area
+ 
+ 
+Dear Customer,
+ 
+This is with reference to a request placed at "Relyon Customer Login Area" for 'Customer ID Retrival'. With reference to the same, below are the Customer ID associated with this email accounts ##EMAILID##.
+ 
+##TABLE##
+ 
+To login, please visit www.imax.relyonsoft.net/customer
+ 
+If you have forgotten your password, please visit www.imax.relyonsoft.net/customer/retrival/password.php page.
+ 
+In case of any more difficulties, please email us at support@relyonsoft.com.
+ 
+Regards,
+ 
+Relyon Support Department
+www.relyonsoft.com
+																This email is a system generated message. Please do not reply to this message(CM).
+
+		
