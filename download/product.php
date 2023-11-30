@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 include_once ('prd_function.php');
@@ -8,7 +8,7 @@ include_once ('prd_function.php');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Product (Full)| Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <style type="text/css">
 .productlink
 {
@@ -30,7 +30,7 @@ a:hover
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr>
-<td colspan="2"><? include('../include/header.php') ?></td>
+<td colspan="2"><?php include('../include/header.php') ?></td>
 </tr>
 <tr>
 <td colspan="2">&nbsp;</td>
@@ -38,7 +38,7 @@ a:hover
 <tr>
 <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+<td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
 <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td class="content-top">&nbsp;</td>
@@ -745,7 +745,7 @@ $product ='Saral XBRL';
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr>
-<td><? include('../include/footer.php') ?></td>
+<td><?php include('../include/footer.php') ?></td>
 </tr>
 </table>
 </body>

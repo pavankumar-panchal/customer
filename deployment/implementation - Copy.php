@@ -1,4 +1,4 @@
-<? 
+<?php 
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 ?>
@@ -6,19 +6,19 @@ include('../include/checksession.php');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <title>View Implementation Status | Relyon Customer Login Area</title>
-<link media="screen" rel="stylesheet" href="../css/colorbox.css?dummy=<? echo (rand());?>" />
-<SCRIPT src="../functions/implementation.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
-<script language="javascript" src="../functions/jquery.colorbox.js?dummy=<? echo (rand());?>"></script>
+<link media="screen" rel="stylesheet" href="../css/colorbox.css?dummy=<?php echo (rand());?>" />
+<SCRIPT src="../functions/implementation.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
+<script language="javascript" src="../functions/jquery.colorbox.js?dummy=<?php echo (rand());?>"></script>
 </head>
-<body onload="checkvalidation(<? echo($cusid); ?>);">
+<body onload="checkvalidation(<?php echo($cusid); ?>);">
 <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
   <tr>
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -26,7 +26,7 @@ include('../include/checksession.php');
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -442,7 +442,7 @@ include('../include/checksession.php');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

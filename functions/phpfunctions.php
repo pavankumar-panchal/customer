@@ -1,4 +1,4 @@
-<?
+<?php
 //Include Database Configuration details
 if(file_exists("../include/dbconfig.php"))
 	include('../include/dbconfig.php');

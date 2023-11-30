@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include('../functions/phpfunctions.php');
 	include('../include/checksession.php');
 	$id = $_GET['id'];

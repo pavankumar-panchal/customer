@@ -1,4 +1,4 @@
-<?
+<?php
 function cusidcombine($customerid)
 {
 	$result1 = substr($customerid,0,4);

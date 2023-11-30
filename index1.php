@@ -1,4 +1,4 @@
-<? 
+<?php 
 include('functions/phpfunctions.php');
 
 $sessionname = session_name("imaxcustomer");	
@@ -91,8 +91,8 @@ else
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title> Customer Login</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<? include('include/scriptsandstyles.php'); ?>
-<SCRIPT src="../functions/main.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT> 
+<?php include('include/scriptsandstyles.php'); ?>
+<SCRIPT src="../functions/main.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT> 
 <script language="javascript">
 
 function checkproperties()
@@ -118,7 +118,7 @@ function checkproperties()
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('./include/header2.php') ?></td>
+    <td colspan="2"><?php include('./include/header2.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -149,13 +149,13 @@ function checkproperties()
                 <tr><td height:"18px"></td></tr>
                   <tr>
                     <td colspan="2" ><div align="center"  style="height:18px;width:73%">
-                   <div id="form-error" align="center" class="error-messagedisplay"><noscript><div  class="error-messagedisplay" > Enable cookies/javscript/both in your browser,  then </div></noscript><? if($message <> '') { ?> <div class="errorbox"> <? echo($message); } ?></div></div></td>
+                   <div id="form-error" align="center" class="error-messagedisplay"><noscript><div  class="error-messagedisplay" > Enable cookies/javscript/both in your browser,  then </div></noscript><?php if($message <> '') { ?> <div class="errorbox"> <?php echo($message); } ?></div></div></td>
                   </tr>
                   <tr><td height="18"></td></tr>
                   <tr>
                     <td align="left" valign="top">Customer ID:</td>
                     <td align="left" valign="top"><label>
-                      <input name="username" type="text" class="swifttext" id="username" onblur="onblurvalue();" value="<? echo($defaultcustomerid); ?>" size="30" maxlength="20" />
+                      <input name="username" type="text" class="swifttext" id="username" onblur="onblurvalue();" value="<?php echo($defaultcustomerid); ?>" size="30" maxlength="20" />
                     </label></td>
                   </tr>
                   <tr>
@@ -169,7 +169,7 @@ function checkproperties()
                     <td colspan="2" valign="top"><div align="center">
   <input name="login" type="submit" class="custchoicebutton-orange" id="login" value="Login" onclick="checkproperties();" />
   &nbsp;&nbsp;&nbsp;
-                      <input name="clear" class="custchoicebutton-orange" type="reset"  id="clear" value="Clear" onClick="document.getElementById('form-error').innerHTML = '';validate(<? echo($cusid); ?>)" />
+                      <input name="clear" class="custchoicebutton-orange" type="reset"  id="clear" value="Clear" onClick="document.getElementById('form-error').innerHTML = '';validate(<?php echo($cusid); ?>)" />
                     </div></td>
                   </tr>
                   <tr><td colspan="2" align="left" style=" padding-left:120px; font-size:12px">&nbsp;</td>
@@ -218,7 +218,7 @@ function checkproperties()
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('./include/footer.php') ?></td>
+    <td><?php include('./include/footer.php') ?></td>
   </tr>
 </table>
 </body>

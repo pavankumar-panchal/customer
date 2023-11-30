@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 include_once ('prd_function.php');
@@ -61,7 +61,7 @@ $customerproductsarray[] = $fetch1['customerproducts'];
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Product Updates | Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <SCRIPT src="../functions/javascript.js" type=text/javascript></SCRIPT>
 <SCRIPT src="../functions/pnginner.js" type=text/javascript></SCRIPT>
 </head>
@@ -71,7 +71,7 @@ $customerproductsarray[] = $fetch1['customerproducts'];
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr>
-<td colspan="2"><? include('../include/header.php') ?></td>
+<td colspan="2"><?php include('../include/header.php') ?></td>
 </tr>
 <tr>
 <td colspan="2">&nbsp;</td>
@@ -79,7 +79,7 @@ $customerproductsarray[] = $fetch1['customerproducts'];
 <tr>
 <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+<td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
 <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td class="content-top">&nbsp;</td>
@@ -94,7 +94,7 @@ $customerproductsarray[] = $fetch1['customerproducts'];
 </tr>
 <tr>
 <td><table  width="100%" border="0" cellspacing="0" cellpadding="0" >
-<? if(matcharray($tdsparray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsparray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -116,8 +116,8 @@ $product ='Saral TDSProfessional';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($tdscarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($tdscarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -138,12 +138,12 @@ $product ='Saral TDSCorporate';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
 
 
-<? if(matcharray($saralgst,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($saralgst,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -164,12 +164,12 @@ $product ='Saral GST';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
 
 
-<? if(matcharray($tdsiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsiarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -192,11 +192,11 @@ $product ='Saral TDSInstitutional';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 <!-- Dot Products Added Here -->
 
-<? if(matcharray($tdsdcarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsdcarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -219,9 +219,9 @@ $product ='Saral TDS.Corporate';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
-<? if(matcharray($tdsdparray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsdparray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -244,9 +244,9 @@ $product ='Saral TDS.Professional';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
-<? if(matcharray($tdsdiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsdiarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -269,7 +269,7 @@ $product ='Saral TDS.Institutional';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
 
@@ -277,7 +277,7 @@ $product ='Saral TDS.Institutional';
 
 <!-- FinTrac Product Updates -->
 
-<? if(matcharray($sfintracprearray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($sfintracprearray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -300,11 +300,11 @@ $product ='Saral FinTrac - Premium';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
 
-<? if(matcharray($sfintracproarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($sfintracproarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><div>
 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -327,13 +327,13 @@ $product ='Saral FinTrac - Professional';
 </table>
 </div></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
 <!-- FinTrac Ends Here -->
 
 
-<? if(matcharray($tdsplarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($tdsplarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -355,9 +355,9 @@ $product ='Saral TDSPlus';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 
-<? if(matcharray($stoarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($stoarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -377,8 +377,8 @@ $product ='Saral TaxOffice';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($sitarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($sitarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -398,8 +398,8 @@ $product ='Saral IncomeTax';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($saiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($saiarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -419,9 +419,9 @@ $product ='Saral Accounts';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 
-<? if(matcharray($saiparray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($saiparray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -441,10 +441,10 @@ $product ='Saral Accounts Professional';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 
 
-<? if(matcharray($sbiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($sbiarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -464,9 +464,9 @@ $product ='Saral Billing';
 </tr>
 </table></td>
 </tr>
-<? } ?><!--END Saral Billing-->
+<?php } ?><!--END Saral Billing-->
 
-<? if(matcharray($svharray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($svharray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr >
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -486,8 +486,8 @@ $product ='Saral VAT100';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($svxarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($svxarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -507,8 +507,8 @@ $product ='Saral VATXML';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($sviarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($sviarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -529,8 +529,8 @@ $product ='Saral VATinfo';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($spparray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($spparray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -664,7 +664,7 @@ $product ='Saral PayPack';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 <!-- ePFESI Addition in Table -->
 
 <!--
@@ -731,7 +731,7 @@ $product ='Saral PayPack';
 </tr>
 -->
 
-<? if(matcharray($saralefpfsi,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($saralefpfsi,$customerproductsarray)){ $haveupgrades = true; ?>
 
 <tr>
 <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center" style="border:1px solid #308ebc;">
@@ -821,10 +821,10 @@ $product ='Saral ePFESI';
 </tr>
 
 -->
-<? } ?>
+<?php } ?>
 
 <!-- ePFESI Ends -->
-<? if(matcharray($sesarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php if(matcharray($sesarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -844,8 +844,8 @@ $product ='Saral eSign';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($scommuarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($scommuarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -865,8 +865,8 @@ $product ='Saral Comminicator';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($sxbrlarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($sxbrlarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -886,8 +886,8 @@ $product ='Saral XBRL';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($sst3array,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($sst3array,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -907,8 +907,8 @@ $product ='Saral eST3';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if(matcharray($sairarray,$customerproductsarray)){ $haveupgrades = true; ?>
+<?php } ?>
+<?php if(matcharray($sairarray,$customerproductsarray)){ $haveupgrades = true; ?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -928,8 +928,8 @@ $product ='Saral AIR';
 </tr>
 </table></td>
 </tr>
-<? } ?>
-<? if($haveupgrades == false){?>
+<?php } ?>
+<?php if($haveupgrades == false){?>
 <tr>
 <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
 <tr>
@@ -942,7 +942,7 @@ $product ='Saral AIR';
 </tr>
 </table></td>
 </tr>
-<? } ?>
+<?php } ?>
 <tr>
 <td >&nbsp;</td>
 </tr>
@@ -967,7 +967,7 @@ $product ='Saral AIR';
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr>
-<td><? include('../include/footer.php') ?></td>
+<td><?php include('../include/footer.php') ?></td>
 </tr>
 </table>
 </body>

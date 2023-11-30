@@ -1,4 +1,4 @@
-<?
+<?php
 include('functions/phpfunctions.php');
 
 //$sessionname = session_name("imaxcustomer");
@@ -89,11 +89,11 @@ session_start();
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title> Customer Login</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<? include('include/scriptsandstyles.php'); ?>
+<?php include('include/scriptsandstyles.php'); ?>
 <!--[if lt IE 8]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 <![endif]-->
-<SCRIPT src="functions/main.js?dummy=<? echo (rand());?>" type='text/javascript'></SCRIPT>
+<SCRIPT src="functions/main.js?dummy=<?php echo (rand());?>" type='text/javascript'></SCRIPT>
 <!--[if lte IE 7]>
  <script src="../functions/IE8.js" type="text/javascript"></script>
  <script src="../functions/ie7-squish.js" type="text/javascript"></script>
@@ -125,7 +125,7 @@ function checkproperties()
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('./include/header2.php') ?></td>
+    <td colspan="2"><?php include('./include/header2.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -156,13 +156,13 @@ function checkproperties()
                 <tr><td height:"18px"></td></tr>
                   <tr>
                     <td colspan="2" height="35px" >
-                   <div id="form-error" align="center" class="error-messagedisplay"><noscript><div  class="error-messagedisplay" > Enable cookies/javscript/both in your browser,  then </div></noscript><? if($message <> '') { ?> <div class="errorbox"> <? echo($message); } ?></div></div></td>
+                   <div id="form-error" align="center" class="error-messagedisplay"><noscript><div  class="error-messagedisplay" > Enable cookies/javscript/both in your browser,  then </div></noscript><?php if($message <> '') { ?> <div class="errorbox"> <?php echo($message); } ?></div></div></td>
                   </tr>
                   <tr><td height="18"></td></tr>
                   <tr>
                     <td align="left" valign="top">Customer ID:</td>
                     <td align="left" valign="top"><label>
-                      <input name="username" type="text" class="swifttext" id="username" onblur="onblurvalue();" value="<? echo($defaultcustomerid); ?>" size="30" maxlength="20" />
+                      <input name="username" type="text" class="swifttext" id="username" onblur="onblurvalue();" value="<?php echo($defaultcustomerid); ?>" size="30" maxlength="20" />
                     </label></td>
                   </tr>
                   <tr>
@@ -225,7 +225,7 @@ function checkproperties()
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('./include/footer.php') ?></td>
+    <td><?php include('./include/footer.php') ?></td>
   </tr>
 </table>
 </body>

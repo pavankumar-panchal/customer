@@ -6,7 +6,7 @@ function getdistrict(divid,statecode)
 			districtlist = '<select name="district" class="swift_mandatory" id="district" style="width: 200px;"><option value="">Select A State First</option></select>';
 			break;
 			
-<?
+<?php
 include('../functions/phpfunctions.php');
 
 $querystate = "SELECT distinct statecode FROM inv_mas_state order by statename;";

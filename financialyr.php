@@ -1,4 +1,4 @@
-<?
+<?php
 echo(calculateFiscalYearForDate(date("m/d/y"), "4/1", "3/31"));
 
 function calculateFiscalYearForDate($inputDate, $fyStart, $fyEnd)
