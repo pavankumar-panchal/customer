@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 //include('../include/checksession.php');
 $cusid=imaxgetcookie('custuserid');
@@ -8,8 +8,8 @@ $cusid=imaxgetcookie('custuserid');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Change Password | Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
-<SCRIPT src="../functions/changepwd.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
+<?php include('../include/scriptsandstyles.php'); ?>
+<SCRIPT src="../functions/changepwd.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
 </head>
 
 <body><table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
@@ -17,7 +17,7 @@ $cusid=imaxgetcookie('custuserid');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -25,7 +25,7 @@ $cusid=imaxgetcookie('custuserid');
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -67,7 +67,7 @@ $cusid=imaxgetcookie('custuserid');
                                             <tr>
                                               <td>&nbsp;
                                                   <div align="center">
-                                                    <input name="update"  value="Update" type="submit" class="swiftchoicebutton" id="update"  onclick="validating(<? echo($cusid); ?>);" />
+                                                    <input name="update"  value="Update" type="submit" class="swiftchoicebutton" id="update"  onclick="validating(<?php echo($cusid); ?>);" />
                                                     &nbsp;
                                                     <input name="clear"  value="Clear" type="button" class="swiftchoicebutton" id="clear" onClick="document.getElementById('form-error').innerHTML = '';"/>
                                                   </div></td>
@@ -99,7 +99,7 @@ $cusid=imaxgetcookie('custuserid');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

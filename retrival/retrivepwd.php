@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 $requestkey = $_GET['key'];
 $errormessage = "";
@@ -27,15 +27,15 @@ else
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Password Retrival |Relyon Customer Login Area</title>
-<SCRIPT src="../functions/retrive.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
-<? include('../include/scriptsandstyles.php'); ?>
+<SCRIPT src="../functions/retrive.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
+<?php include('../include/scriptsandstyles.php'); ?>
 <body>
 <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
   <tr>
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header3.php') ?></td>
+    <td colspan="2"><?php include('../include/header3.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -58,15 +58,15 @@ else
                     <tr>
                       <td>&nbsp;</td>
                     </tr>
-                    <? if($errormessage <> "") { ?>
+                    <?php if($errormessage <> "") { ?>
                     <tr>
-                      <td style="font-size:12px; font-family:Verdana; padding:4px; border:2px solid #FF0000; background-color:#FFFF99"><div align="center"><? echo($errormessage); ?></div></td>
+                      <td style="font-size:12px; font-family:Verdana; padding:4px; border:2px solid #FF0000; background-color:#FFFF99"><div align="center"><?php echo($errormessage); ?></div></td>
                     </tr>
-                    <? } ?>
+                    <?php } ?>
                     <tr>
                       <td style="font-size:12px; font-family:Verdana; padding:4px; padding-left:5px"><p>&nbsp;</p></td>
                     </tr>
-                    <? if($errormessage == "") { ?>
+                    <?php if($errormessage == "") { ?>
                     <tr>
                       <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
                           <tr>
@@ -79,7 +79,7 @@ else
                                         </tr>
                                         <tr>
                                           <td colspan="3" height="35px" >Please enter a new password for your login at Customer Login Area.<br />
-                                            <strong>Your Username: <? echo(cusidcombine1($fetch['customerid'])); ?></strong></td>
+                                            <strong>Your Username: <?php echo(cusidcombine1($fetch['customerid'])); ?></strong></td>
                                         </tr>
                                         <tr>
                                           <td colspan="3" height="38px" ><div id="form-error" align="center"></div></td>
@@ -93,7 +93,7 @@ else
                                         </tr>
                                         <tr>
                                           <td align="left" valign="top">&nbsp;</td>
-                                          <td width="74" align="left" valign="top"><input name="resetpassword" type="button" class="swiftchoicebutton" id="resetpassword" value="Proceed..." onclick="validation(<? echo('\''.$_GET['key'].'\'') ?>)" /></td>
+                                          <td width="74" align="left" valign="top"><input name="resetpassword" type="button" class="swiftchoicebutton" id="resetpassword" value="Proceed..." onclick="validation(<?php echo('\''.$_GET['key'].'\'') ?>)" /></td>
                                           <td width="213" align="left" valign="top"><input name="clearform" type="button" class="swiftchoicebutton" id="clearform" value="Clear" onclick="resetform();" /></td>
                                         </tr>
                                         <tr>
@@ -106,7 +106,7 @@ else
                           </tr>
                         </table></td>
                     </tr>
-                    <? } ?>
+                    <?php } ?>
                     <tr>
                       <td>&nbsp;</td>
                     </tr>
@@ -126,7 +126,7 @@ else
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

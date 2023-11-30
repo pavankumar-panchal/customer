@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 //$cusid = imaxgetcookie('custuserid');
@@ -129,7 +129,7 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head >
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <title>View Profile |  Relyon Customer Login Area</title>
 </head>
 <body>
@@ -138,7 +138,7 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -146,7 +146,7 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -191,76 +191,76 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
                                                   <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">Customer ID: </td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="customerid"><? echo($customerid)?> </td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="customerid"><?php echo($customerid)?> </td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">GSTIN: </td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="gst_no"><? echo($gst_no)?> </td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="gst_no"><?php echo($gst_no)?> </td>
                                                     </tr>
                                                     <tr>
                                                       <td width="39%" align="left" bgcolor="#F7FAFF">Business Name:</td>
-                                                      <td width="66%" align="left" bgcolor="#F7FAFF" id="businessname"><? echo($businessname);?></td>
+                                                      <td width="66%" align="left" bgcolor="#F7FAFF" id="businessname"><?php echo($businessname);?></td>
                                                     </tr>
 
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">Address:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="address"><? echo($address)?></td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="address"><?php echo($address)?></td>
                                                     </tr>
                                                     <tr bgcolor="#edf4ff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">Place:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="place"><? echo($place)?></td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="place"><?php echo($place)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">State:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="state" ><? echo($statename)?> </td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="state" ><?php echo($statename)?> </td>
                                                     </tr>
                                                     <tr bgcolor="#edf4ff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">District:</td>
-                                                      <td valign="top" bgcolor="#F7FAFF" id="district" align="left"><? echo($districtname)?> </td>
+                                                      <td valign="top" bgcolor="#F7FAFF" id="district" align="left"><?php echo($districtname)?> </td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">Pin Code:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="pincode"><? echo($pincode)?></td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="pincode"><?php echo($pincode)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td width="39%" align="left" valign="top" bgcolor="#F7FAFF">STD Code:</td>
-                                                      <td width="66%" align="left" valign="top" id="stdcode" bgcolor="#F7FAFF"><? echo($stdcode)?></td>
+                                                      <td width="66%" align="left" valign="top" id="stdcode" bgcolor="#F7FAFF"><?php echo($stdcode)?></td>
                                                     </tr>
 
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">Website:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="website"><? echo($website)?> </td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="website"><?php echo($website)?> </td>
                                                     </tr>
                                                     <tr bgcolor="#edf4ff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">Type:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="type"><? echo($type)?></td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="type"><?php echo($type)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">Category:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="category"><? echo($category)?></td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="category"><?php echo($category)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">Promotional SMS:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="promotionalsms"><? echo($promotionalsms)?></td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF" id="promotionalsms"><?php echo($promotionalsms)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">Promotional Email:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="promotionalemail"><? echo($promotionalemail)?></td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="promotionalemail"><?php echo($promotionalemail)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td colspan="2" align="left" valign="top" bgcolor="#EDF4FF"><strong>For Relyon Use Only:</strong></td>
                                                     </tr>
                                                     <tr bgcolor="#edf4ff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">Region:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="region"><? echo($region)?></td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="region"><?php echo($region)?></td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#EDF4FF">First Dealer:</td>
-                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="firstdealer"><? echo($firstdealer) ?> </td>
+                                                      <td align="left" valign="top" bgcolor="#EDF4FF"  id="firstdealer"><?php echo($firstdealer) ?> </td>
                                                     </tr>
                                                     <tr bgcolor="#f7faff">
                                                       <td align="left" valign="top" bgcolor="#F7FAFF">First Product:</td>
-                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="firstproduct"><? echo($firstproduct)?> </td>
+                                                      <td align="left" valign="top" bgcolor="#F7FAFF" id="firstproduct"><?php echo($firstproduct)?> </td>
                                                     </tr>
                                                   </table></td>
                                                 </tr>
@@ -269,7 +269,7 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
                                               <div style="display:none;" align="justify" id="tabg1c2">
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="3" class="productcontent" height="300px">
                                                         <tr>
-                                                          <td colspan="2" valign="top"><? echo($grid);?></td>
+                                                          <td colspan="2" valign="top"><?php echo($grid);?></td>
                                                         </tr>
                                                       </table>
                                                     </div></td>
@@ -293,7 +293,7 @@ WHERE inv_mas_customer.slno = '".$cusid."';";
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 

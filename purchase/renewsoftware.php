@@ -1,4 +1,4 @@
-<? 
+<?php 
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 $year = date('Y').'-'.(date('y')+1);
@@ -24,10 +24,10 @@ else
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <title>Renew Your Sofware</title>
-<SCRIPT src="../functions/renewsoftware.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
-<script language="javascript" src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
+<SCRIPT src="../functions/renewsoftware.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
+<script language="javascript" src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
 <script type="text/javascript">
    $(document).ready( function() {
           $('#popupBoxClose').click( function() {  
@@ -94,7 +94,7 @@ text-decoration:none;
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -102,7 +102,7 @@ text-decoration:none;
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -365,7 +365,7 @@ text-decoration:none;
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>
@@ -383,6 +383,6 @@ switch(colorvalue)
 }
 </script>
 </html>
-<?
+<?php
 }
 ?>

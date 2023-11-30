@@ -1,4 +1,4 @@
-<? 
+<?php 
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 
@@ -8,18 +8,18 @@ include('../include/checksession.php');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <title>Edit Profile | Relyon Customer Login Area</title>
-<SCRIPT src="../functions/editprofile.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
-<script language="javascript" src="../functions/getdistrictjs.php?dummy=<? echo (rand());?>"></script>
+<SCRIPT src="../functions/editprofile.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
+<script language="javascript" src="../functions/getdistrictjs.php?dummy=<?php echo (rand());?>"></script>
 </head>
-<body onload="getcustomerdetails(<? echo($cusid); ?>);">
+<body onload="getcustomerdetails(<?php echo($cusid); ?>);">
 <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
   <tr>
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -27,7 +27,7 @@ include('../include/checksession.php');
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -75,7 +75,7 @@ include('../include/checksession.php');
                                                             <td><div id="updatewarningmeg" style="display:none">
                                                               <table width="100%" border="0" cellspacing="0" cellpadding="2">
                                                                   <tr>
-                                                                    <td class="errorbox">Your Profile Update Request is pending for approval by Relyon. This will be processed in few hours. If you wish to cancel this request, <a onclick="cancelupdate(<? echo($cusid); ?>);" style="cursor:pointer; color:#0000FF; ">click here</a>.</td>
+                                                                    <td class="errorbox">Your Profile Update Request is pending for approval by Relyon. This will be processed in few hours. If you wish to cancel this request, <a onclick="cancelupdate(<?php echo($cusid); ?>);" style="cursor:pointer; color:#0000FF; ">click here</a>.</td>
                                                                   </tr>
                                                                 </table>
                                                             </div>
@@ -114,7 +114,7 @@ include('../include/checksession.php');
                                                                   <td align="left" valign="top" bgcolor="#EDF4FF">State:</td>
                                                                   <td align="left" valign="top" bgcolor="#EDF4FF"><select name="state" class="swift_mandatory" id="state"  onchange="getdistrict('districtcodedisplay',this.value);" onkeyup="getdistrict('districtcodedisplay',this.value);" style="width:200px" >
                                                                       <option value="">Select A State</option>
-                                                                      <? include('../include/state.php'); ?>
+                                                                      <?php include('../include/state.php'); ?>
                                                                   </select></td>
                                                                 </tr>
                                                                 <tr bgcolor="#edf4ff">
@@ -146,7 +146,7 @@ include('../include/checksession.php');
                                                                   <td align="left" valign="top" bgcolor="#f7faff">Type:</td>
                                                                   <td align="left" valign="top" bgcolor="#f7faff"><select name="type" class="swift_mandatory" id="type" style="width:200px">
                                                                       <option value="" selected="selected">Type Selection</option>
-                                                                      <? 
+                                                                      <?php 
 											include('../include/custype.php');
 												?>
                                                                   </select></td>
@@ -155,7 +155,7 @@ include('../include/checksession.php');
                                                                   <td height="30" align="left" valign="top" bgcolor="#edf4ff">Category:</td>
                                                                   <td align="left" valign="top" bgcolor="#edf4ff"><select name="category" class="swift_mandatory" id="category" style="width:200px">
                                                                       <option value="">Category Selection</option>
-                                                                      <? 
+                                                                      <?php 
 											include('../include/category.php');
 												?>
                                                                   </select></td>
@@ -258,9 +258,9 @@ include('../include/checksession.php');
                                     <tr><td><table width="100%" border="0" cellspacing="0" cellpadding="0" >
                                           <tr>
                                             <td width="65%" height="35" align="left" valign="middle" ><div id="form-error" align="left">&nbsp;</div></td>
-                                            <td  align="right" valign="middle"><input name="update" type="button" class="swiftchoicebutton" id="update" value="Update" onclick="validation(<? echo($cusid); ?>);" />
+                                            <td  align="right" valign="middle"><input name="update" type="button" class="swiftchoicebutton" id="update" value="Update" onclick="validation(<?php echo($cusid); ?>);" />
                                               &nbsp;&nbsp;&nbsp;
-                                            <input name="clear" type="reset" class="swiftchoicebutton" id="reset" value="Reset"   onClick="document.getElementById('form-error').innerHTML = ''; validate(<? echo($cusid); ?>)"  />&nbsp;                                              </td>
+                                            <input name="clear" type="reset" class="swiftchoicebutton" id="reset" value="Reset"   onClick="document.getElementById('form-error').innerHTML = ''; validate(<?php echo($cusid); ?>)"  />&nbsp;                                              </td>
                                         </tr>
                                       </table></td></tr>
                                     
@@ -280,7 +280,7 @@ include('../include/checksession.php');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

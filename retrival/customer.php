@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Customer ID Retrival | Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
-<SCRIPT src="../functions/custpasswd.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
+<?php include('../include/scriptsandstyles.php'); ?>
+<SCRIPT src="../functions/custpasswd.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
 </head>
 
 <body><table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
@@ -11,7 +11,7 @@
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header3.php') ?></td>
+    <td colspan="2"><?php include('../include/header3.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -91,7 +91,7 @@
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 

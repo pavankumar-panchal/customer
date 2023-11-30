@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 
@@ -98,9 +98,9 @@ $emailid = trim($emailarray[0]);
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Make Payments | Relyon Customer Login Area</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
-<? include('../include/scriptsandstyles.php'); ?>
-<script language="javascript" src="../functions/javascript.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
-<script language="javascript" src="../functions/payments.js?dummy=<? echo (rand());?>" type="text/javascript"></script>
+<?php include('../include/scriptsandstyles.php'); ?>
+<script language="javascript" src="../functions/javascript.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
+<script language="javascript" src="../functions/payments.js?dummy=<?php echo (rand());?>" type="text/javascript"></script>
 <script type="text/javascript">
    $(document).ready( function() {
           $('#popupBoxClose').click( function() {  
@@ -167,7 +167,7 @@ text-decoration:none;
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" ><? include('../include/header.php') ?></td>
+    <td colspan="2" ><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -175,7 +175,7 @@ text-decoration:none;
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -192,13 +192,13 @@ text-decoration:none;
                       <td><form action="" method="post" name="submitform" id="submitform"  onsubmit="return false;">
                           <table width="100%" border="0" cellspacing="5" cellpadding="4">
                        <tr>
-                              <td><? if($_GET['error'] <> '') { ?> <div class="errorbox"> <? echo('Invalid Entry'); } ?></div></td>
+                              <td><?php if($_GET['error'] <> '') { ?> <div class="errorbox"> <?php echo('Invalid Entry'); } ?></div></td>
                             </tr>
                            
                             <tr>
-                              <td><? if($message <> '') { ?> 
+                              <td><?php if($message <> '') { ?> 
                               <div class="errorbox"> 
-							  <? echo($message); } else {?> </div><? echo($grid);}?>
+							  <?php echo($message); } else {?> </div><?php echo($grid);}?>
                              </td>
                             </tr>
                           </table>
@@ -244,7 +244,7 @@ text-decoration:none;
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

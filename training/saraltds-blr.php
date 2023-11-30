@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 //$cusid=imaxgetcookie('custuserid');;
@@ -8,8 +8,8 @@ include('../include/checksession.php');
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Training | Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
-<SCRIPT src="../functions/saraltds-blr.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
+<?php include('../include/scriptsandstyles.php'); ?>
+<SCRIPT src="../functions/saraltds-blr.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
 </head>
 
 <body>
@@ -18,7 +18,7 @@ include('../include/checksession.php');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -26,7 +26,7 @@ include('../include/checksession.php');
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -168,7 +168,7 @@ include('../include/checksession.php');
                             <td><div id="form-error" align="left">
                         
                         &nbsp;</div></td>
-                            <td width="200"><input name="send" type="button" class="swiftchoicebutton" id="send" value="Send" onclick="formsubmiting(<? echo($cusid); ?>);" />
+                            <td width="200"><input name="send" type="button" class="swiftchoicebutton" id="send" value="Send" onclick="formsubmiting(<?php echo($cusid); ?>);" />
       &nbsp;
                         <input name="clear" type="reset" class="swiftchoicebutton" id="resetvalue" value="Reset" onClick="document.getElementById('form-error').innerHTML = '';enablesend();"  /></td>
                           </tr>
@@ -187,7 +187,7 @@ include('../include/checksession.php');
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

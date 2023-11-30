@@ -1,4 +1,4 @@
-<?
+<?php
 
 include('../include/ajax-referer-security.php');
 include("../functions/phpfunctions.php");
@@ -316,7 +316,7 @@ function returnhomepage()
 
 </script>
 <meta name="copyright" content="Relyon Softech Ltd. All rights reserved." />
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 </head>
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -332,7 +332,7 @@ function returnhomepage()
           <tr>
             <td colspan="2">&nbsp;</td>
           </tr>
-          <? if($ResponseCode == 0) { ?>
+          <?php if($ResponseCode == 0) { ?>
           <tr>
             <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
@@ -363,10 +363,10 @@ function returnhomepage()
                               <td colspan="2"><table width="90%" border="0" cellspacing="0" cellpadding="5" align="center">
                                   <tr>
                                     <td width="45%" valign="top" class="displayfont"><strong>Payment from :</strong><br />
-                                      <? echo($businessname)?><br />
-                                      <? echo($contactperson)?><br />
-                                      <? echo($address)?><br />
-                                      <? echo($place)?> : <? echo($pincode)?> </td>
+                                      <?php echo($businessname)?><br />
+                                      <?php echo($contactperson)?><br />
+                                      <?php echo($address)?><br />
+                                      <?php echo($place)?> : <?php echo($pincode)?> </td>
                                     <td width="45%"  valign="top" class="displayfont"><strong>Payment To :</strong><br />
                                       Relyon Softech Ltd<br />
                                       No. 73, Shreelekha Complex, <br />
@@ -377,7 +377,7 @@ function returnhomepage()
                                 </table></td>
                             </tr>
                             <tr>
-                              <td colspan="2" class="fontstyle" ><p align="left">You have been successfully paid for <img src="../images/relyon-rupee-small.jpg" width="8" height="10"  />&nbsp; <? echo($total)?>. An email also have been sent to <font color="#FF0000"><? echo($emailid)?></font> with the confirmation.<br />
+                              <td colspan="2" class="fontstyle" ><p align="left">You have been successfully paid for <img src="../images/relyon-rupee-small.jpg" width="8" height="10"  />&nbsp; <?php echo($total)?>. An email also have been sent to <font color="#FF0000"><?php echo($emailid)?></font> with the confirmation.<br />
                                 <p align="left">The Product Purchased Details of the proceed Transaction is as below:</p></td>
                             </tr>
                             <tr>
@@ -388,10 +388,10 @@ function returnhomepage()
                                   <tr>
                                     <td><table width="400px" border="0" cellspacing="0" cellpadding="3" align="center" style="border:solid 1px #D4D4D4">
                                         <tr>
-                                          <td class="displayfont"><p align="center"><strong>Transaction Status:</strong> <? echo($Message); ?><br />
-                                              <strong>Relyon Transaction ID:</strong> <? echo($TxnID); ?><br />
-                                              <strong>ICICI Transaction reference Number:</strong> <? echo($ePGTxnID); ?><br />
-                                              <strong>Authorization ID: </strong> <? echo($AuthIdCode) ?> <br />
+                                          <td class="displayfont"><p align="center"><strong>Transaction Status:</strong> <?php echo($Message); ?><br />
+                                              <strong>Relyon Transaction ID:</strong> <?php echo($TxnID); ?><br />
+                                              <strong>ICICI Transaction reference Number:</strong> <?php echo($ePGTxnID); ?><br />
+                                              <strong>Authorization ID: </strong> <?php echo($AuthIdCode) ?> <br />
                                             </p></td>
                                         </tr>
                                       </table></td>
@@ -422,7 +422,7 @@ function returnhomepage()
                 </tr>
               </table></td>
           </tr>
-          <? }else{?>
+          <?php }else{?>
           <tr>
             <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:solid 2px #272727">
                 <tr>
@@ -458,9 +458,9 @@ function returnhomepage()
                             <tr>
                               <td><table width="400px" border="0" cellspacing="0" cellpadding="3" align="center" style="border:solid 1px #D4D4D4" >
                                   <tr>
-                                    <td class="displayfont"><p align="center"><strong>Transaction Status:</strong><? echo($Message); ?><br />
-                                        <strong>Relyon Transaction ID:</strong> <? echo($TxnID); ?><br />
-                                        <strong>ICICI Transaction reference Number:</strong> <? echo($ePGTxnID); ?><br />
+                                    <td class="displayfont"><p align="center"><strong>Transaction Status:</strong><?php echo($Message); ?><br />
+                                        <strong>Relyon Transaction ID:</strong> <?php echo($TxnID); ?><br />
+                                        <strong>ICICI Transaction reference Number:</strong> <?php echo($ePGTxnID); ?><br />
                                       </p></td>
                                   </tr>
                                 </table></td>
@@ -480,7 +480,7 @@ function returnhomepage()
                 </tr>
               </table></td>
           </tr>
-          <? }?>
+          <?php }?>
           <tr>
             <td></td>
           </tr>
