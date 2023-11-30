@@ -101,49 +101,74 @@ function cusidcombine1($customerid)
 }
 
 
+// function grouplongname($shortname)
+// {
+
+// 	switch($shortname)
+// 	{
+// 		case "NA":
+// 			return "Not Applicable";
+// 			break;
+// 		case "STO":
+// 			return "Tax Software";
+// 			break;
+// 		case "SES":
+// 			return "Saral Sign";
+// 			break;
+// 		case "CONTACT":
+// 			return "Contact Management Software";
+// 			break;
+// 		case "SPP":
+// 			return "Payroll Products";
+// 			break;
+// 		case "SAC":
+// 			return "Saral Accounts";
+// 			break;
+// 		case "OTHERS":
+// 			return "General Products";
+// 			break;
+// 		case "SURVEY":
+// 			return "Survey Products";
+// 			break;
+// 		case "TDS":
+// 			return "TDS Products";
+// 			break;
+// 		case "SVH":
+// 			return "Saral VAT100";
+// 			break;
+// 		case "SVI":
+// 			return "Saral VATinfo";
+// 			break;
+// 		case "AIR":
+// 			return "Annual Information Return";
+// 			break;
+// 	}
+// }
+
+
 function grouplongname($shortname)
 {
-
-	switch($shortname)
-	{
-		case "NA":
-			return "Not Applicable";
-			break;
-		case "STO":
-			return "Tax Software";
-			break;
-		case "SES":
-			return "Saral Sign";
-			break;
-		case "CONTACT":
-			return "Contact Management Software";
-			break;
-		case "SPP":
-			return "Payroll Products";
-			break;
-		case "SAC":
-			return "Saral Accounts";
-			break;
-		case "OTHERS":
-			return "General Products";
-			break;
-		case "SURVEY":
-			return "Survey Products";
-			break;
-		case "TDS":
-			return "TDS Products";
-			break;
-		case "SVH":
-			return "Saral VAT100";
-			break;
-		case "SVI":
-			return "Saral VATinfo";
-			break;
-		case "AIR":
-			return "Annual Information Return";
-			break;
-	}
+    return match ($shortname) {
+        "NA" => "Not Applicable",
+        "STO" => "Tax Software",
+        "SES" => "Saral Sign",
+        "CONTACT" => "Contact Management Software",
+        "SPP" => "Payroll Products",
+        "SAC" => "Saral Accounts",
+        "OTHERS" => "General Products",
+        "SURVEY" => "Survey Products",
+        "TDS" => "TDS Products",
+        "SVH" => "Saral VAT100",
+        "SVI" => "Saral VATinfo",
+        "AIR" => "Annual Information Return",
+        default => "Unknown Group",
+    };
 }
+
+
+
+
+
 
  function downloadfile($filelink)
 {
