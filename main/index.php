@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunctions.php'); 
 include('../include/checksession.php');
 
@@ -146,9 +146,9 @@ left join
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? include('../include/scriptsandstyles.php'); ?>
-<link rel="stylesheet" type="text/css" href="../css/style.css?dummy=<? echo (rand());?>">
-<SCRIPT src="../functions/dashboard.js?dummy=<? echo (rand());?>" type=text/javascript></SCRIPT>
+<?php include('../include/scriptsandstyles.php'); ?>
+<link rel="stylesheet" type="text/css" href="../css/style.css?dummy=<?php echo (rand());?>">
+<SCRIPT src="../functions/dashboard.js?dummy=<?php echo (rand());?>" type=text/javascript></SCRIPT>
 <title>Dashboard | Relyon Customer Login Area</title>
 <script type="text/javascript">
    $(document).ready( function() {
@@ -216,7 +216,7 @@ text-decoration:none;
     <td  colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -224,7 +224,7 @@ text-decoration:none;
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -232,7 +232,7 @@ text-decoration:none;
               <tr>
                 <td class="content-mid"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td colspan="2" class="heading-font">Welcome <? echo($businessname);?>,</td>
+                    <td colspan="2" class="heading-font">Welcome <?php echo($businessname);?>,</td>
                   </tr>
                   <tr>
                     <td height="4px" colspan="2" class="blueline"></td>
@@ -250,19 +250,19 @@ text-decoration:none;
                           <tr>
                             <td height="178" valign="middle"><table width="270" border="0" cellpadding="4" cellspacing="0" class="dashboardprofilebox">
                               <tr>
-                                <td  style="font-size:16px;"><? echo(gridtrim40($businessname));?></td>
+                                <td  style="font-size:16px;"><?php echo(gridtrim40($businessname));?></td>
                               </tr>
                               <tr>
-                                <td><? echo(gridtrim40($contactperson));?></td>
+                                <td><?php echo(gridtrim40($contactperson));?></td>
                               </tr>
                               <tr>
-                                <td><? echo(gridtrim40($place));?>, <? echo(gridtrim40($districtname));?>, <? echo(gridtrim40($statename));?></td>
+                                <td><?php echo(gridtrim40($place));?>, <?php echo(gridtrim40($districtname));?>, <?php echo(gridtrim40($statename));?></td>
                               </tr>
                               <tr>
-                                <td>Phone: <? echo(gridtrim40($phone));?>, <? echo(gridtrim40($cell));?></td>
+                                <td>Phone: <?php echo(gridtrim40($phone));?>, <?php echo(gridtrim40($cell));?></td>
                               </tr>
                               <tr>
-                                <td height="20px">Email: <? echo(gridtrim40($emailid));?></td>
+                                <td height="20px">Email: <?php echo(gridtrim40($emailid));?></td>
                               </tr>
                               <tr>
                                 <td style="font-size:15px;"><div align="right"><a href="../profile/editprofile.php">Edit these details</a></div></td>
@@ -303,7 +303,7 @@ text-decoration:none;
                     </table></td>
                   </tr>
                   <tr>
-                    <td ><? 
+                    <td ><?php 
 					  $query0 = "select  COUNT(*) AS count from inv_custpaymentreq left join inv_mas_customer on  inv_mas_customer.slno = inv_custpaymentreq.custreferences  where inv_mas_customer.slno='".$cusid."' and inv_custpaymentreq.paymentstatus = 'UNPAID'";
 						$fetch1 = runmysqlqueryfetch($query0);
 						if($fetch1['count'] > 0)
@@ -316,7 +316,7 @@ text-decoration:none;
 						}
 	  					?></td>
                   </tr>
-                  <? if($p_request == 'yes') { ?>
+                  <?php if($p_request == 'yes') { ?>
                   <tr>
                     <td style="padding-left:6px" ><table width="96%" border="0" cellspacing="0" cellpadding="0" align="center" class="paymentreq-font">
                       <!--<tr>
@@ -333,7 +333,7 @@ text-decoration:none;
                         <td height="5px" colspan="3"></td>
                       </tr>
                     </table></td>
-                  </tr> <? } ?>
+                  </tr> <?php } ?>
                   <tr>
                     <td>&nbsp;</td>
                   </tr>
@@ -344,7 +344,7 @@ text-decoration:none;
                   <tr>
                     <td>&nbsp;</td>
                   </tr>
-                    <td><? echo($grid);?></td>
+                    <td><?php echo($grid);?></td>
                   </tr><tr>
                     <td>&nbsp;</td>
                   </tr>
@@ -418,7 +418,7 @@ text-decoration:none;
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>

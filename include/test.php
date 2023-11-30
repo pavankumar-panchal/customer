@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/password.php');
 include('../functions/phpfunctions.php');
 	$customerid= $_POST['customerid'];

@@ -1,4 +1,4 @@
-<?
+<?php
 	$cusid = imaxgetcookie('custuserid');
 	$query = "select * from inv_mas_customer where inv_mas_customer.slno ='".$cusid."'";
 	$fetch= runmysqlqueryfetch($query);
@@ -18,7 +18,7 @@
                 <td class="links-mid"><table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
                 
                  <tr>
-                      <td class="company_font" align="center" ><? echo($businessname);?></td>
+                      <td class="company_font" align="center" ><?php echo($businessname);?></td>
                     </tr>
                     
                     <tr><td height="5px"></td></tr>
@@ -53,11 +53,11 @@
                     <tr>
                       <td class="blueline" height="4px"></td>
                     </tr>
-                   <? if($relyonexecutive == 'yes')  {?>
+                   <?php if($relyonexecutive == 'yes')  {?>
                    <tr>
                       <td><a href="../purchase/renewsoftware.php" class="sub_headingfont" >Renew your Software</a></td>
                     </tr>
-                   <? } ?>
+                   <?php } ?>
                     <tr>
                       <td><a href="../purchase/manageinvoices.php" class="sub_headingfont" >Manage Invoices</a></td>
                     </tr>

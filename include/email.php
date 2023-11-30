@@ -1,4 +1,4 @@
-<?
+<?php
 
 $cusid=imaxgetcookie('custuserid');
 $query = "select emailid  from inv_contactdetails where customerid = '".$cusid."';";

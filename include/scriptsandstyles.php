@@ -1,4 +1,4 @@
-<?
+<?php
 	if(file_exists("../css/style.css")) echo('<LINK href="../css/style.css" rel=stylesheet>');
 	elseif(file_exists("../../css/style.css")) echo('<LINK href="../../css/style.css" rel=stylesheet>');
 	elseif(file_exists("../../../css/style.css")) echo('<LINK href="../../../css/style.css" rel=stylesheet>');

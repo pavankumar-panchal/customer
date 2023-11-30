@@ -1,4 +1,4 @@
-<?
+<?php
 include('../functions/phpfunc.php');
 
 $customeridysep = cusidcombine(imaxgetcookie('dbcustomerid'));
@@ -17,7 +17,7 @@ $customeridysep = cusidcombine(imaxgetcookie('dbcustomerid'));
                 </tr>
                 <tr >
                   <td width="53%" >&nbsp;&nbsp;<a href="../main/index.php"class="Links" ><strong>Home</strong></a>&nbsp;|&nbsp;&nbsp;<a href="../profile/viewprofile.php" class="Links"><strong>Profile</strong></a>&nbsp;<!--| &nbsp;&nbsp;<a href="../messages/message.php" class="Links"><strong>Messages</strong></a>--></td>
-                  <td width="47%" ><div align="right"><font color="#c94141">Customer ID: <? echo($customeridysep);?></font> &nbsp;|&nbsp;&nbsp; <a href="../logout.php" class="Links" ><strong>Logout</strong></a></div></td>
+                  <td width="47%" ><div align="right"><font color="#c94141">Customer ID: <?php echo($customeridysep);?></font> &nbsp;|&nbsp;&nbsp; <a href="../logout.php" class="Links" ><strong>Logout</strong></a></div></td>
                 </tr>
                 <tr>
                   <td height="10" colspan="2"></td>

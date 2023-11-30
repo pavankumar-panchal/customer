@@ -1,4 +1,4 @@
-<?
+<?php
 	include('../functions/phpfunctions.php'); 
 	include('../include/checksession.php');
 	//$cusid=imaxgetcookie('custuserid');
@@ -40,7 +40,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Product Updates | Relyon Customer Login Area</title>
-<? include('../include/scriptsandstyles.php'); ?>
+<?php include('../include/scriptsandstyles.php'); ?>
 <SCRIPT src="../functions/javascript.js" type=text/javascript></SCRIPT>
 <SCRIPT src="../functions/pnginner.js" type=text/javascript></SCRIPT>
 </head>
@@ -50,7 +50,7 @@
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2"><? include('../include/header.php') ?></td>
+    <td colspan="2"><?php include('../include/header.php') ?></td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -58,7 +58,7 @@
   <tr>
     <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="200" valign="top"><? include('../include/left-link.php'); ?></td>
+          <td width="200" valign="top"><?php include('../include/left-link.php'); ?></td>
           <td width="700" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="content-top">&nbsp;</td>
@@ -73,7 +73,7 @@
                     </tr>
                     <tr>
                       <td><table  width="100%" border="0" cellspacing="0" cellpadding="0" >
-                          <? if(matcharray($tdsparray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php if(matcharray($tdsparray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -305,8 +305,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($tdscarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($tdscarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -541,8 +541,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($tdsiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($tdsiarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><div>
                                 <table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
@@ -778,8 +778,8 @@
                                 </table>
                               </div></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($stoarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($stoarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -1224,8 +1224,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($sitarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($sitarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -1634,8 +1634,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($saiarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($saiarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -1851,8 +1851,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($svharray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($svharray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr >
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2060,8 +2060,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($svxarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($svxarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2112,8 +2112,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($sviarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($sviarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2611,8 +2611,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($spparray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($spparray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2870,8 +2870,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($sesarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($sesarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2922,8 +2922,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($scommuarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($scommuarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -2974,8 +2974,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($sxbrlarray,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($sxbrlarray,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -3105,8 +3105,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if(matcharray($sst3array,$customerproductsarray)){ $haveupgrades = true; ?>
+                          <?php } ?>
+                          <?php if(matcharray($sst3array,$customerproductsarray)){ $haveupgrades = true; ?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -3345,8 +3345,8 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
-                          <? if($haveupgrades == false){?>
+                          <?php } ?>
+                          <?php if($haveupgrades == false){?>
                           <tr>
                             <td  style="padding-bottom:10px"><table width="600" border="0" cellpadding="5" cellspacing="0" align="center"  style="border:1px solid #308ebc;" >
                                 <tr>
@@ -3359,7 +3359,7 @@
                                 </tr>
                               </table></td>
                           </tr>
-                          <? } ?>
+                          <?php } ?>
                           <tr>
                             <td >&nbsp;</td>
                           </tr>
@@ -3384,7 +3384,7 @@
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><? include('../include/footer.php') ?></td>
+    <td><?php include('../include/footer.php') ?></td>
   </tr>
 </table>
 </body>
